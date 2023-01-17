@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <section class="main">
+        <div class="selection-blocks">
+            <div class="edu">
+            <div class="header"><h1>Tests</h1></div>
+            <div class="azerbaijan block">
+               <p>Azerbaijani language</p> 
+               <p class="test-number az"></p>
+            </div>
+            <div class="english block">
+                <p>English</p>
+                <p class="test-number en"></p>
+            </div>
+            <div class="history block">
+                <p>History</p>
+                <p class="test-number hs"></p>
+            </div>
+        </div>
+            <div class="level">
+                <div class="header"><h1>Test Level</h1></div>
+                <button class="beginner blocklevel">Simple</button>
+                <button class="medium blocklevel">Medium</button>
+                <button class="hard blocklevel">Difficult</button>
+            </div>
+            <div class="questions">
+                <div class="question">
+                    <p id="q"></p>
+                </div>
+                <div class="variants" id="variants">
+                    <p id="v1" class="v1"></p>
+                    <p id="v2" class="v2"></p>
+                    <p id="v3" class="v3"></p>
+                    <p id="v4" class="v4"></p>
+                </div>
+                <div class="netice">
+                    <div class="paragraph">
+                        <h1>The result</h1>
+                        <p id="say">Number of questions: </p>
+                        <p id="dogru" class="netice-p">Number of correct answers: </p>
+                        <p id="sehv" class="netice-p">Number of incorrect answers: </p>
+                        <p id="daxiledilmeyen" class="netice-p">Number of unanswered questions: </p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button id="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
