@@ -155,7 +155,6 @@ var questions=[
         $("#v2").text(quiz[y].variant2);
         $("#v3").text(quiz[y].variant3);
         $("#v4").text(quiz[y].variant4);
-
         $("#next").click(function(){
             y+=1;
             $("#q").text(quiz[y].question);
@@ -204,7 +203,6 @@ var questions=[
                             }
                             for(let j=0;j<a.length;j++){
                                 $(a[j]).addClass("danger");
-                            
                             next.addEventListener("click",function(){
                                 $(a[i]).removeClass("qirmizi");
                                 $(a[i]).removeClass("yasil");
